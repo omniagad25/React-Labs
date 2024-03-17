@@ -1,0 +1,38 @@
+#home{
+    background: url("https://wallpaperaccess.com/full/5651989.jpg");
+    color: aliceblue;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+.custom-col1{
+    margin-top: 25%;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+#main-nav{
+    background-color: transparent;
+}
+
+.btn{
+    margin: 8px;
+    background-color: brown;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 40%;
+}
+
+.btn:hover{
+    background-color: indianred;
+}
+
+.display-3{
+    margin: 30px;
+    font-size: 50px;
+}
