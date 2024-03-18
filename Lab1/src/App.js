@@ -6,18 +6,20 @@ import NavBar from './components/navbar/NavBar';
 import AboutMe from './components/about-me/AboutMe';
 import Skills from './components/skills/Skills';
 import Footer from './components/footer/Footer';
-
+import Portfolio from './components/portfolio/Portfolio';
 
 function App() {
   const name = 'Omnia Gad';
   const info = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore assumenda quaerat sit asperiores voluptatibus id nobis iure ipsum, suscipit accusamus excepturi doloremque in. Atque culpa optio assumenda alias, ex accusantium.';
-
+  
+  
   return (
     <>
     <NavBar></NavBar>
     <Hero name ={name}></Hero>
     <AboutMe name={name} info={info}></AboutMe>
     <Skills></Skills>
+    <Portfolio></Portfolio>
     <Footer></Footer>
     </>
   );

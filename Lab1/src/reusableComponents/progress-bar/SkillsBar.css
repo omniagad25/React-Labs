@@ -1,0 +1,23 @@
+h4 {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .bar{
+    width: 50%;
+    height: 20px;
+    font-size: 100%;
+    font-weight: bold;
+    margin-left: 70%;
+    display:inline-block;
+  }
+
+  .custom-progress-bar{
+    background-color: brown;
+  }
+
+  .custom-progress-bar .progress-bar-label {
+    text-align: center; /* Center the label */
+  }
+
+  

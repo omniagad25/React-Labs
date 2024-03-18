@@ -1,18 +1,30 @@
 import './Skills.css';
-import SkillsBar from './../progress-bar/SkillsBar'
+import SkillsBar from '../../reusableComponents/progress-bar/SkillsBar';
+
 
 function Skills(){
-    return(
-        <>
-        
-        <div className="w-50">
-          <SkillsBar percentageValue={"70"} skillName={"Python"} />
-          <SkillsBar percentageValue={"85"} skillName={"JavaScript"} />
-          <SkillsBar percentageValue={"90"} skillName={"NodeJS"} />
-          <SkillsBar percentageValue={"70"} skillName={"React"} />
-        </div>
-        </>
-    )
+  const skillsData = [
+    { skillName: "Python", percentageValue: "70" },
+    { skillName: "JavaScript", percentageValue: "85" },
+    { skillName: "NodeJS", percentageValue: "90" },
+    { skillName: "React", percentageValue: "70" }
+  ];
+  const renderContent = (skillName) => (
+    <h4>{skillName}</h4>
+  );
+
+  return (
+    <div className="skills-container">
+      {skillsData.map((skill, index) => (
+        <SkillsBar
+          key={index}
+          skillName={skill.skillName}
+          percentageValue={skill.percentageValue}
+          renderContent={renderContent}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default Skills;
